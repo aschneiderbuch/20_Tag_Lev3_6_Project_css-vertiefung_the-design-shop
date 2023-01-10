@@ -247,4 +247,19 @@ filter:saturate(2%) grayscale(95%) contrast(20%) brightness(1.4) ;
 
 
 
-/* ****************** Bilder damit es grobe Style vorschau gibt */
+/* **************************** footer *********************** */
+/* **************************** footer *********************** */
+/* **************************** footer *********************** */
+
+footer>section{
+    background-color: red;
+    width: 85%;         /* * damit Footer nur bis ca. mitte 3tes Bild geht */
+    display: flex;      /* * damit 4 Texte/article nebeneinander */
+    justify-content:space-between;
+    padding-top: 5vh;       /* * damit Abstand zu Bildunterschriften kommt */
+}
+
+.footerBlockSpalte__designShop{
+    background-color: aqua;
+
+}
