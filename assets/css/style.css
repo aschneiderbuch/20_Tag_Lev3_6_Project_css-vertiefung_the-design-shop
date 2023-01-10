@@ -109,29 +109,24 @@ body {
 /* **************************** header *********************** */
 
 header {
-    background-color: red;
     display: flex;
     justify-content: space-between;
     padding-bottom: 5vh;
 }
 
 header>h1 {
-    background-color: aqua;
     font-size: 1.4rem;
     font-family: SchriftDick, sans-serif;
 
 }
 
 header>nav {
-    background-color: goldenrod;
-
     width: 30vw;
     display: flex;
     justify-content: space-between;
 }
 
 header>nav>a {
-    background-color: yellow;
     justify-content: space-between;
     text-decoration: none;
 
@@ -166,7 +161,6 @@ header>nav>a:hover {
 
 .siebenBilderZusammen {
     max-width: 100%;
-    background-color: red;
     display: flex;
     flex-wrap: wrap;
     /* * bricht Bilder um */
@@ -176,7 +170,6 @@ header>nav>a:hover {
 
 
 .einzelnesBild>a>img {
-    background-color: orange;
     width: 100%;
 }
 
@@ -184,14 +177,12 @@ header>nav>a:hover {
 
 
 .einzelnesBild {
-    background-color: green;
     width: 32%;
     /* * macht die 6 Bilder klein */
 }
 
 
 .einzelnesBild--breit {
-    background-color: blue;
     width: 100%;
     /* * macht das große wieder groß
                                             * wichtig muss nach .einzelBild
@@ -219,7 +210,6 @@ header>nav>a:hover {
 /* ************************ figcaption Bild Unterschriften **************** */
 
 .sectionBildUnterschriften {
-    background-color: yellowgreen;
     display: flex;
     justify-content: space-between;
     padding-top: 2vh;
@@ -229,13 +219,11 @@ header>nav>a:hover {
 }
 
 .sectionBildUnterschriften>figcaption>h3 {
-    background-color: aqua;
     font-size: 1.2rem;
     /* * Größe Artikel Beschreibung */
 }
 
 .sectionBildUnterschriften>figcaption>h5 {
-    background-color: blueviolet;
     color: #848484;
     font-size: 1rem;
     /* * Größe Text Herstller */
@@ -244,7 +232,6 @@ header>nav>a:hover {
 }
 
 .sectionBildUnterschriften>figcaption>h4 {
-    background-color: antiquewhite;
     font-size: 1.15rem;
     /* * Größe Preis */
 }
@@ -252,7 +239,7 @@ header>nav>a:hover {
 .sectionBildUnterschriften>figcaption>h4::before {
     content: "$";
     /* * Damit vor Preis ein $ Zeichen steht */
-    margin-right: -10px;
+    margin-right: -3px;
     /* * damit $ direkt vor Zahl steht */
 }
 
@@ -267,7 +254,6 @@ header>nav>a:hover {
 
 /* *********** Grid Area     4 Spalten 3 Zeilen ************* */
 footer>section {
-    background-color: red;
     width: 90%;
     /* * damit Footer nur bis ca. mitte 3tes Bild geht */
     padding-top: 5vh;
@@ -306,7 +292,6 @@ foote>section>p {
 /* ************* Spalte 1 ************** */
 
 .designShop {
-    background-color: yellow;
     grid-area: head1;
 
     font-size: 1.1rem;
@@ -314,7 +299,6 @@ foote>section>p {
 }
 
 .designShop__textMitte {
-    background-color: greenyellow;
     grid-area: text1;
     width: 82%;
     /* * damit Umbruch nach Wort "store" entsteht */
@@ -328,7 +312,6 @@ foote>section>p {
 }
 
 .designShop__textUnten {
-    background-color: green;
     grid-area: foot1;
 
     color: #848484;
@@ -343,12 +326,10 @@ foote>section>p {
 /* ************* Spalte 2 ************** */
 
 .contact {
-    background-color: yellow;
     grid-area: head2;
 }
 
 .contact__textMitte {
-    background-color: greenyellow;
     grid-area: text2;
 
     text-decoration: none;
@@ -365,12 +346,10 @@ foote>section>p {
 /* ************* Spalte 3 ************** */
 
 .newsLetter {
-    background-color: yellow;
     grid-area: head3;
 }
 
 .newsLetter__textMitte {
-    background-color: greenyellow;
     grid-area: text3;
 
     width: 79%;
@@ -381,7 +360,6 @@ foote>section>p {
 
 /* * Text "subscribe" */
 .newsLetter__textMitte>a {
-    background-color: red;
     font-family: SchriftDick, sans-serif;
     text-decoration: none;
     font-size: 1rem;
@@ -390,7 +368,6 @@ foote>section>p {
 
 /* * Text "Don't worry. .... too */
 .newsLetter__textMitte>span {
-    background-color: violet;
     font-family: SchriftSchraeg, sans-serif;
 
 }
@@ -403,12 +380,10 @@ foote>section>p {
 /* ************* Spalte 4 ************** */
 
 .findUs {
-    background-color: yellow;
     grid-area: head4;
 }
 
 .findUs__textMitteNav {
-    background-color: greenyellow;
     grid-area: text4;
     display: flex;
     flex-direction: column;
@@ -531,6 +506,12 @@ foote>section>p {
         /* *damit es mit Bild Rand rechts bündig ist */
     }
 
+    .sectionBildUnterschriften>figcaption>h4::before {
+        margin-right: -10px;
+        /* * $ näher zu Zahlen rücken */
+    }
+
+
 
 
     /* **************************** footer *********************** */
@@ -551,7 +532,8 @@ foote>section>p {
         /* * dafür 12 Zeilen  - davor 3*4 = 12 jetzt 1*12 = 12 */
         /* * Vorsicht weil foot1 ganz unten muss auch sein 1fr ganz hinten */
 
-        row-gap: 6vh;           /* * mehr Abstand zu Überschriften  */
+        row-gap: 6vh;
+        /* * mehr Abstand zu Überschriften  */
 
 
 
@@ -591,7 +573,7 @@ foote>section>p {
 
     .designShop__textMitte {
         font-size: 1.5rem;
-        
+
 
     }
 
@@ -616,51 +598,54 @@ foote>section>p {
 
     .contact__textMitte {
         font-size: 1.5rem;
-        width: 25vw;            /* * damit es Umbruch nach "us" gibt */
+        width: 25vw;
+        /* * damit es Umbruch nach "us" gibt */
     }
 
 
 
-/* ************* Spalte 3 ************** */
-.newsLetter{
-    font-size: 2rem;
+    /* ************* Spalte 3 ************** */
+    .newsLetter {
+        font-size: 2rem;
+    }
+
+
+    .newsLetter__textMitte {
+        font-size: 1.5rem;
+        width: 52vw;
+        /* * damit es Umbruch nach "subscribe" gitb */
+    }
+
+    .newsLetter__textMitte>a {
+        font-size: 1.5rem;
+    }
+
+
+
+
+
+    /* ************* Spalte 4 ************** */
+
+    .findUs {
+        font-size: 2rem;
+    }
+
+    .findUs__textMitteNav>a {
+        font-size: 1.5rem;
+    }
+
+
+
+
+
+
+
+
+    /*  */
+
 }
-
-
-.newsLetter__textMitte {
-font-size: 1.5rem;
-width: 52vw;            /* * damit es Umbruch nach "subscribe" gitb */
-}
-
-.newsLetter__textMitte>a {
-font-size: 1.5rem;
-}
-
-
-
-
-
-/* ************* Spalte 4 ************** */
-
-.findUs{
-    font-size: 2rem;
-}
-
-.findUs__textMitteNav>a {
-font-size: 1.5rem;
-}
-
-
-
-
-
-
-
 
 /*  */
-
-}
-       /*  */
 /* ******************* media Queries Ende ******************* */
 /* ******************* media Queries Ende ******************* */
 /* ******************* media Queries Ende ******************* */
