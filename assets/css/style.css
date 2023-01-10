@@ -18,14 +18,30 @@ font-family: SchriftSchraeg , sans-serif;
 /* ********************* font Familiy Schriften einbinden *********** */
 
 @font-face {
-    font-family: SchriftSchraeg ;
+    font-family: SchriftSchraeg;
     src: url("../fonts/Karla/Karla-Italic-VariableFont_wght.ttf");
 }
 
 @font-face {
-    font-family: SchriftNormal ;
+    font-family: SchriftNormal;
     src: url("../fonts/Karla/Karla-VariableFont_wght.ttf");
 }
+
+
+
+/* ******************** Schriften angewendet ******************* */
+
+h1, h2, h3, h4, h5, p,a {
+    font-family: SchriftNormal , sans-serif;
+    
+}
+
+
+
+
+
+
+
 
 
 
@@ -35,7 +51,7 @@ font-family: SchriftSchraeg , sans-serif;
 
 /* ********************** Browser default style auf 0 setzen **************** */
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -60,15 +76,54 @@ html {
 /* ******************* img verkleinern, damit es anfangs nicht alles zerschiest ******* */
 
 img {
-width: 300px;
+    width: 300px;
 
 }
 
 
+
+/* **************************** body *********************** */
+/* **************************** body *********************** */
+/* **************************** body *********************** */
+
+body {
+    padding: 5vh 5vw 1vh 5vw;
+}
+
+
+
+
 /* **************************** header *********************** */
 /* **************************** header *********************** */
 /* **************************** header *********************** */
 
+header {
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5vh;
+}
+
+header>h1{
+    background-color: aqua;
+    font-size: 1.2rem;
+    
+}
+
+header>nav{
+    background-color: goldenrod;
+
+    width: 30vw;
+display: flex;
+justify-content: space-between;
+    }
+
+    header>nav>a{
+        background-color: yellow;
+justify-content: space-between;    
+text-decoration: none;
+
+}
 
 
 
@@ -76,11 +131,51 @@ width: 300px;
 
 
 
+/* **************************** main *********************** */
+/* **************************** main *********************** */
+/* **************************** main *********************** */
 
 
 
 
 
+/* *************************   erster   Block  -     sieben Bilder zusammen ********************* */
+/* *************************   erster   Block  -     sieben Bilder zusammen ********************* */
+/* *************************   erster   Block  -     sieben Bilder zusammen ********************* */
+
+
+.siebenBilderZusammen {
+    max-width: 100%;
+    background-color: red;
+    display: flex;
+    flex-wrap: wrap;                /* * bricht Bilder um */
+    justify-content: space-between;   /* * macht Spalte zwischen Bildern */
+}
+
+
+.einzelnesBild>a>img{
+    background-color: orange;
+    width: 100%;
+}
+
+
+.einzelnesBild {
+    background-color: green;
+    width: 30%;                         /* * macht die 6 Bilder klein */
+}
+
+
+.einzelnesBild--breit {
+    background-color: blue;
+    width: 100%;                        /* * macht das große wieder groß
+                                            * wichtig muss nach .einzelBild
+                                            * kommen, da es zuerst auch 30% ist/*  */                                     */
+}
+
+
+
+
+/* ************************ figcaption **************** */
 
 
 
@@ -93,20 +188,3 @@ width: 300px;
 
 /* ****************** Bilder damit es grobe Style vorschau gibt */
 
-
-.siebenBilderZusammen{
-    max-width: 100%;
-    background-color: red;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.einzelnesBild{
-    background-color: green;
-    width: 33%;
-}
-
-.einzelnesBild--breit{
-    background-color: blue;
-    width: 100%;   /* * img noch direkt ansprechen */
-}
