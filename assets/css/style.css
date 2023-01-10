@@ -5,6 +5,8 @@ font-family: SchriftNormal , sans-serif;
 
 font-family: SchriftSchraeg , sans-serif;
 
+font-family: SchriftDick , sans-serif;
+
 */
 
 
@@ -27,7 +29,10 @@ font-family: SchriftSchraeg , sans-serif;
     src: url("../fonts/Karla/Karla-VariableFont_wght.ttf");
 }
 
-
+@font-face {
+    font-family: SchriftDick;
+    src: url("../fonts/Karla/static/Karla-Bold.ttf");
+}
 
 /* ******************** Schriften angewendet ******************* */
 
@@ -93,7 +98,7 @@ img {
 /* **************************** body *********************** */
 
 body {
-    padding: 5vh 5vw 1vh 5vw;
+    padding: 5vh 5vw 2vh 5vw;
 }
 
 
@@ -113,6 +118,7 @@ header {
 header>h1 {
     background-color: aqua;
     font-size: 1.4rem;
+    font-family: SchriftDick , sans-serif;
 
 }
 
@@ -264,7 +270,7 @@ footer>section {
 
 
     grid-template-columns: 3fr 1fr 2fr 2fr;
-    grid-template-rows: 1fr 4fr 1fr;
+    grid-template-rows: 2fr 4fr 1fr;            /* * Pos1 2fr= damit Abstand von Zeile 1 zu Zeile 2 kommt */
 
     grid-template-areas:
         "head1 head2 head3 head4"
@@ -272,13 +278,20 @@ footer>section {
         "foot1 foot2 foot3 foot4"
 
     ;
-    row-gap: 2vh;
-    column-gap: 2vw;
+    row-gap: 2vh;           /* * Zeilen Abstand  */
+    column-gap: 2vw;        /* * Spalten Abstand */
+
+
+
 }
 
 
 
 
+/* **************** footer alle   p   Schriftgröße   */
+foote>section>p{
+    font-size: 1rem;
+}
 
 
 /* ************* Spalte 1 ************** */
@@ -286,16 +299,29 @@ footer>section {
 .designShop {
     background-color: yellow;
     grid-area: head1;
+
+    font-size: 1.1rem;
+    font-family: SchriftDick , sans-serif;
 }
 
 .designShop__textMitte {
     background-color: greenyellow;
     grid-area: text1;
+width: 82% ;                /* * damit Umbruch nach Wort "store" entsteht */
+}
+
+.designShop__textMitte>span{
+    font-family: SchriftDick , sans-serif;    font-size: 1.05rem;
+    line-height: 1.5;
+
 }
 
 .designShop__textUnten {
     background-color: green;
     grid-area: foot1;
+
+    color: #848484;
+    font-size: 0.8rem;
 }
 
 
@@ -313,6 +339,11 @@ footer>section {
 .contact__textMitte {
     background-color: greenyellow;
     grid-area: text2;
+
+    text-decoration: none;
+    font-family: SchriftDick , sans-serif;
+    line-height: 1.5;
+
 }
 
 
@@ -330,6 +361,22 @@ footer>section {
 .newsLetter__textMitte {
     background-color: greenyellow;
     grid-area: text3;
+
+    width: 79%;                   /* * Damit es nach Wort "subscribe" umbricht */
+    line-height: 1.5;
+}
+.newsLetter__textMitte>a{
+    background-color: red;
+    font-family: SchriftDick , sans-serif;
+    text-decoration: none;
+    font-size: 1rem;
+
+}
+
+.newsLetter__textMitte>span{
+    background-color: violet;
+    font-family: SchriftSchraeg , sans-serif;
+
 }
 
 
@@ -347,4 +394,15 @@ footer>section {
 .findUs__textMitteNav {
     background-color: greenyellow;
     grid-area: text4;
+    display: flex;
+    flex-direction: column;
 }
+
+.findUs__textMitteNav>a{
+    text-decoration: none;
+    line-height: 1.5;
+
+}
+
+
+
