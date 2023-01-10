@@ -60,7 +60,7 @@ html {
 /* ******************* img verkleinern, damit es anfangs nicht alles zerschiest ******* */
 
 img {
-
+width: 300px;
 
 }
 
