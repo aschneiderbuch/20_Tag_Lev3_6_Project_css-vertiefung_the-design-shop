@@ -228,22 +228,22 @@ header>nav>a:hover {
     /* * macht Abstand von Text zu Bild drunter */
 }
 
-.sectionBildUnterschriften>figcaption>h3 {
+.sectionBildUnterschriften>figcaption>h3 {      
     background-color: aqua;
-    font-size: 1.2rem;
+    font-size: 1.2rem;          /* * Größe Artikel Beschreibung */
 }
 
 .sectionBildUnterschriften>figcaption>h5 {
     background-color: blueviolet;
     color: #848484;
-    font-size: 1rem;
+    font-size: 1rem;        /* * Größe Text Herstller */
     margin-top: 0.5vh;
     /* * macht Abstand nach obenzur großen Unterschrift */
 }
 
 .sectionBildUnterschriften>figcaption>h4 {
     background-color: antiquewhite;
-    font-size: 1.15rem;
+    font-size: 1.15rem;             /* * Größe Preis */
 }
 
 .sectionBildUnterschriften>figcaption>h4::before {
@@ -411,7 +411,98 @@ width: 82% ;                /* * damit Umbruch nach Wort "store" entsteht */
 /* ******************* media Queries Start ******************* */
 
 @media only screen and (max-width: 600px) {
+
+
+
+/* ********************** html setzen ***************** */
+
+    html {
+        max-width: 600px;
+    }
+
+/* **************************** body *********************** */
+/* **************************** body *********************** */
+/* **************************** body *********************** */
+
+body {
+    padding: 2vh 1vw 1vh 1vw
+}
+
+
+/* **************************** header *********************** */
+/* **************************** header *********************** */
+/* **************************** header *********************** */
+
+
+header>h1{
+    font-size: 2rem;
+    width: 49%;         /*  * mit BurgerMenü daneben */
+}
+
+header>nav{
+    width: 49%;      /* * Nav durch BurgerMenü ersetzen */
+}
+
+
+
+
+/* **************************** main *********************** */
+/* **************************** main *********************** */
+/* **************************** main *********************** */
+
+
+
+/* *************************   erster   Block  -     sieben Bilder zusammen ********************* */
+/* *************************   erster   Block  -     sieben Bilder zusammen ********************* */
+/* *************************   erster   Block  -     sieben Bilder zusammen ********************* */
+
+
+.siebenBilderZusammen {
+flex-direction: column;         /* * damit Bilder untereinander */
+}
+
+
+
+
+.einzelnesBild>a>img {
+    object-fit: cover;      /* !!! Hilfe !!! Bild wird nicht gezoomt, warum nicht? */
+    max-width: 100%;
     
+    }
+
+
+
+
+
+.einzelnesBild {
+width: 100% ;               /* * Bilder Begrenzung raus,
+                            * damit sie ganze Breite einnehmen dürfen */
+}
+
+
+
+
+
+/* ************************ figcaption Bild Unterschriften **************** */
+
+.sectionBildUnterschriften {
+align-items: baseline;
+}
+
+
+.sectionBildUnterschriften>figcaption>h3 {
+    font-size: 1.3rem;
+}
+
+.sectionBildUnterschriften>figcaption>h5{
+font-size: 1.3rem;
+}
+
+
+.sectionBildUnterschriften>figcaption>h4 {
+font-size: 1.9rem;
+
+}
 
 
 
@@ -427,28 +518,6 @@ width: 82% ;                /* * damit Umbruch nach Wort "store" entsteht */
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
 }/*  */
 /* ******************* media Queries Ende ******************* */
 /* ******************* media Queries Ende ******************* */
