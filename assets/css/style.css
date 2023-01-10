@@ -132,7 +132,14 @@ header>nav>a {
 }
 
 
+/* ************* Text hover Effekt  ************* */
 
+header>h1:hover, header>nav>a:hover{
+    filter:saturate(2%) grayscale(95%) contrast(20%) brightness(1.4) ;
+            /* * graut Text ein :-(  */
+            border-radius: 20vw;
+    
+    }
 
 
 
@@ -167,6 +174,8 @@ header>nav>a {
 }
 
 
+
+
 .einzelnesBild {
     background-color: green;
     width: 32%;
@@ -179,9 +188,23 @@ header>nav>a {
     width: 100%;
     /* * macht das große wieder groß
                                             * wichtig muss nach .einzelBild
-                                            * kommen, da es zuerst auch 30% ist/*  */
-    */
+                                            * kommen, da es zuerst auch 30% ist  */
+    
 }
+
+
+
+
+/* ************* Bild hover Effekt  ************* */
+
+.einzelnesBild>a>img:hover{
+filter:saturate(2%) grayscale(95%) contrast(20%) brightness(1.4) ;
+        /* * graut Bilder ein :-(  */
+
+        border-radius: 50vw;
+
+}
+
 
 
 
