@@ -31,9 +31,15 @@ font-family: SchriftSchraeg , sans-serif;
 
 /* ******************** Schriften angewendet ******************* */
 
-h1, h2, h3, h4, h5, p,a {
-    font-family: SchriftNormal , sans-serif;
-    
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+a {
+    font-family: SchriftNormal, sans-serif;
+
 }
 
 
@@ -104,24 +110,24 @@ header {
     padding-bottom: 5vh;
 }
 
-header>h1{
+header>h1 {
     background-color: aqua;
-    font-size: 1.2rem;
-    
+    font-size: 1.4rem;
+
 }
 
-header>nav{
+header>nav {
     background-color: goldenrod;
 
     width: 30vw;
-display: flex;
-justify-content: space-between;
-    }
+    display: flex;
+    justify-content: space-between;
+}
 
-    header>nav>a{
-        background-color: yellow;
-justify-content: space-between;    
-text-decoration: none;
+header>nav>a {
+    background-color: yellow;
+    justify-content: space-between;
+    text-decoration: none;
 
 }
 
@@ -148,12 +154,14 @@ text-decoration: none;
     max-width: 100%;
     background-color: red;
     display: flex;
-    flex-wrap: wrap;                /* * bricht Bilder um */
-    justify-content: space-between;   /* * macht Spalte zwischen Bildern */
+    flex-wrap: wrap;
+    /* * bricht Bilder um */
+    justify-content: space-between;
+    /* * macht Spalte zwischen Bildern */
 }
 
 
-.einzelnesBild>a>img{
+.einzelnesBild>a>img {
     background-color: orange;
     width: 100%;
 }
@@ -161,30 +169,59 @@ text-decoration: none;
 
 .einzelnesBild {
     background-color: green;
-    width: 30%;                         /* * macht die 6 Bilder klein */
+    width: 32%;
+    /* * macht die 6 Bilder klein */
 }
 
 
 .einzelnesBild--breit {
     background-color: blue;
-    width: 100%;                        /* * macht das große wieder groß
+    width: 100%;
+    /* * macht das große wieder groß
                                             * wichtig muss nach .einzelBild
-                                            * kommen, da es zuerst auch 30% ist/*  */                                     */
+                                            * kommen, da es zuerst auch 30% ist/*  */
+    */
 }
 
 
 
 
-/* ************************ figcaption **************** */
+/* ************************ figcaption Bild Unterschriften **************** */
 
+.sectionBildUnterschriften {
+    background-color: yellowgreen;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2vh;
+    /* * macht Abstand zu Bild Unterschrift */
+    padding-bottom: 4vh;
+    /* * macht Abstand von Text zu Bild drunter */
+}
 
+.sectionBildUnterschriften>figcaption>h3 {
+    background-color: aqua;
+    font-size: 1.2rem;
+}
 
+.sectionBildUnterschriften>figcaption>h5 {
+    background-color: blueviolet;
+    color: #848484;
+    font-size: 1rem;
+    margin-top: 0.5vh;
+    /* * macht Abstand nach obenzur großen Unterschrift */
+}
 
+.sectionBildUnterschriften>figcaption>h4{
+    background-color: antiquewhite;
+    font-size: 1.15rem;
+}
 
+.sectionBildUnterschriften>figcaption>h4::before{
+    content: " $ ";
+}
 
 
 
 
 
 /* ****************** Bilder damit es grobe Style vorschau gibt */
-
