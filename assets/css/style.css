@@ -252,7 +252,8 @@ header>nav>a:hover {
 .sectionBildUnterschriften>figcaption>h4::before {
     content: "$";
     /* * Damit vor Preis ein $ Zeichen steht */
-    margin-right: -10px;         /* * damit $ direkt vor Zahl steht */
+    margin-right: -10px;
+    /* * damit $ direkt vor Zahl steht */
 }
 
 
@@ -377,14 +378,17 @@ foote>section>p {
     line-height: 1.5;
 }
 
+
+/* * Text "subscribe" */
 .newsLetter__textMitte>a {
     background-color: red;
     font-family: SchriftDick, sans-serif;
     text-decoration: none;
     font-size: 1rem;
-
 }
 
+
+/* * Text "Don't worry. .... too */
 .newsLetter__textMitte>span {
     background-color: violet;
     font-family: SchriftSchraeg, sans-serif;
@@ -519,11 +523,13 @@ foote>section>p {
 
     .sectionBildUnterschriften>figcaption>h4 {
         font-size: 2.3rem;
-        width: 24vw;        /* * damit $ keinen Umbruch verursacht  
+        width: 24vw;
+        /* * damit $ keinen Umbruch verursacht  
                                 * da Schrift h3 ja jetzt teils zwei zeilig 
                                 * Vorsicht gibt auch $799,00*/
-        text-align: right;  /* *damit es mit Bild Rand rechts bündig ist */
-                            }
+        text-align: right;
+        /* *damit es mit Bild Rand rechts bündig ist */
+    }
 
 
 
@@ -545,7 +551,7 @@ foote>section>p {
         /* * dafür 12 Zeilen  - davor 3*4 = 12 jetzt 1*12 = 12 */
         /* * Vorsicht weil foot1 ganz unten muss auch sein 1fr ganz hinten */
 
-        row-gap: 2vh;
+        row-gap: 6vh;           /* * mehr Abstand zu Überschriften  */
 
 
 
@@ -554,13 +560,16 @@ foote>section>p {
             "text1"
             "head2"
             "text2"
-            /* "foot2" */       /* * leer Block verschwindet somit passt Fromatierung */
+            /* "foot2" */
+            /* * leer Block verschwindet somit passt Fromatierung */
             "head3"
             "text3"
-            /* "foot3" */        /* * leer Block verschwindet somit passt Fromatierung */
+            /* "foot3" */
+            /* * leer Block verschwindet somit passt Fromatierung */
             "head4"
             "text4"
-            /* "foot4" */         /* * leer Block verschwindet somit passt Fromatierung */
+            /* "foot4" */
+            /* * leer Block verschwindet somit passt Fromatierung */
             "foot1"
             /* * da copyr ganz unten sein soll */
 
@@ -570,19 +579,75 @@ foote>section>p {
     /* **************** footer alle   p   Schriftgröße   */
 
     foote>section>p {
-        font-size: 2.3rem;
+        font-size: 1.5rem;
         word-spacing: 1rem;
     }
-/* ************* Spalte 1 ************** */
 
-.designShop {
-font-size: 3rem;
+    /* ************* Spalte 1 ************** */
+
+    .designShop {
+        font-size: 2.3rem;
+    }
+
+    .designShop__textMitte {
+        font-size: 1.5rem;
+        
+
+    }
+
+    .designShop__textMitte>span {
+        font-size: 1.6rem;
+    }
+
+    .designShop__textUnten {
+        font-size: 1.5rem;
+        /* * Vorsicht der Text copyr ist jetzt ganz unten */
+    }
+
+
+
+
+
+    /* ************* Spalte 2 ************** */
+
+    .contact {
+        font-size: 2rem;
+    }
+
+    .contact__textMitte {
+        font-size: 1.5rem;
+        width: 25vw;            /* * damit es Umbruch nach "us" gibt */
+    }
+
+
+
+/* ************* Spalte 3 ************** */
+.newsLetter{
+    font-size: 2rem;
 }
 
-.designShop__textMitte {
-width: 55%;
-    font-size: ;
 
+.newsLetter__textMitte {
+font-size: 1.5rem;
+width: 52vw;            /* * damit es Umbruch nach "subscribe" gitb */
+}
+
+.newsLetter__textMitte>a {
+font-size: 1.5rem;
+}
+
+
+
+
+
+/* ************* Spalte 4 ************** */
+
+.findUs{
+    font-size: 2rem;
+}
+
+.findUs__textMitteNav>a {
+font-size: 1.5rem;
 }
 
 
@@ -592,14 +657,10 @@ width: 55%;
 
 
 
+/*  */
 
-
-
-
-
-
-
-}/*  */
+}
+       /*  */
 /* ******************* media Queries Ende ******************* */
 /* ******************* media Queries Ende ******************* */
 /* ******************* media Queries Ende ******************* */
