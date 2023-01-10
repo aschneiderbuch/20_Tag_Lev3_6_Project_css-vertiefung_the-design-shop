@@ -64,3 +64,18 @@ width: 300px;
 
 }
 
+.siebenBilderZusammen{
+    background-color: red;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.einzelnesBild{
+    background-color: green;
+    width: 33%;
+}
+
+.einzelnesBild--breit{
+    background-color: blue;
+    width: 100vw;   /* * img noch direkt ansprechen */
+}
