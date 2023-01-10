@@ -118,7 +118,7 @@ header {
 header>h1 {
     background-color: aqua;
     font-size: 1.4rem;
-    font-family: SchriftDick , sans-serif;
+    font-family: SchriftDick, sans-serif;
 
 }
 
@@ -228,26 +228,31 @@ header>nav>a:hover {
     /* * macht Abstand von Text zu Bild drunter */
 }
 
-.sectionBildUnterschriften>figcaption>h3 {      
+.sectionBildUnterschriften>figcaption>h3 {
     background-color: aqua;
-    font-size: 1.2rem;          /* * Größe Artikel Beschreibung */
+    font-size: 1.2rem;
+    /* * Größe Artikel Beschreibung */
 }
 
 .sectionBildUnterschriften>figcaption>h5 {
     background-color: blueviolet;
     color: #848484;
-    font-size: 1rem;        /* * Größe Text Herstller */
+    font-size: 1rem;
+    /* * Größe Text Herstller */
     margin-top: 0.5vh;
     /* * macht Abstand nach obenzur großen Unterschrift */
 }
 
 .sectionBildUnterschriften>figcaption>h4 {
     background-color: antiquewhite;
-    font-size: 1.15rem;             /* * Größe Preis */
+    font-size: 1.15rem;
+    /* * Größe Preis */
 }
 
 .sectionBildUnterschriften>figcaption>h4::before {
-    content: " $ ";
+    content: "$";
+    /* * Damit vor Preis ein $ Zeichen steht */
+    margin-right: -10px;         /* * damit $ direkt vor Zahl steht */
 }
 
 
@@ -270,7 +275,8 @@ footer>section {
 
 
     grid-template-columns: 3fr 1fr 2fr 2fr;
-    grid-template-rows: 2fr 4fr 1fr;            /* * Pos1 2fr= damit Abstand von Zeile 1 zu Zeile 2 kommt */
+    grid-template-rows: 2fr 4fr 1fr;
+    /* * Pos1 2fr= damit Abstand von Zeile 1 zu Zeile 2 kommt */
 
     grid-template-areas:
         "head1 head2 head3 head4"
@@ -278,8 +284,10 @@ footer>section {
         "foot1 foot2 foot3 foot4"
 
     ;
-    row-gap: 2vh;           /* * Zeilen Abstand  */
-    column-gap: 2vw;        /* * Spalten Abstand */
+    row-gap: 2vh;
+    /* * Zeilen Abstand  */
+    column-gap: 2vw;
+    /* * Spalten Abstand */
 
 
 
@@ -289,7 +297,7 @@ footer>section {
 
 
 /* **************** footer alle   p   Schriftgröße   */
-foote>section>p{
+foote>section>p {
     font-size: 1rem;
 }
 
@@ -301,17 +309,19 @@ foote>section>p{
     grid-area: head1;
 
     font-size: 1.1rem;
-    font-family: SchriftDick , sans-serif;
+    font-family: SchriftDick, sans-serif;
 }
 
 .designShop__textMitte {
     background-color: greenyellow;
     grid-area: text1;
-width: 82% ;                /* * damit Umbruch nach Wort "store" entsteht */
+    width: 82%;
+    /* * damit Umbruch nach Wort "store" entsteht */
 }
 
-.designShop__textMitte>span{
-    font-family: SchriftDick , sans-serif;    font-size: 1.05rem;
+.designShop__textMitte>span {
+    font-family: SchriftDick, sans-serif;
+    font-size: 1.05rem;
     line-height: 1.5;
 
 }
@@ -341,7 +351,7 @@ width: 82% ;                /* * damit Umbruch nach Wort "store" entsteht */
     grid-area: text2;
 
     text-decoration: none;
-    font-family: SchriftDick , sans-serif;
+    font-family: SchriftDick, sans-serif;
     line-height: 1.5;
 
 }
@@ -362,20 +372,22 @@ width: 82% ;                /* * damit Umbruch nach Wort "store" entsteht */
     background-color: greenyellow;
     grid-area: text3;
 
-    width: 79%;                   /* * Damit es nach Wort "subscribe" umbricht */
+    width: 79%;
+    /* * Damit es nach Wort "subscribe" umbricht */
     line-height: 1.5;
 }
-.newsLetter__textMitte>a{
+
+.newsLetter__textMitte>a {
     background-color: red;
-    font-family: SchriftDick , sans-serif;
+    font-family: SchriftDick, sans-serif;
     text-decoration: none;
     font-size: 1rem;
 
 }
 
-.newsLetter__textMitte>span{
+.newsLetter__textMitte>span {
     background-color: violet;
-    font-family: SchriftSchraeg , sans-serif;
+    font-family: SchriftSchraeg, sans-serif;
 
 }
 
@@ -398,7 +410,7 @@ width: 82% ;                /* * damit Umbruch nach Wort "store" entsteht */
     flex-direction: column;
 }
 
-.findUs__textMitteNav>a{
+.findUs__textMitteNav>a {
     text-decoration: none;
     line-height: 1.5;
 
@@ -414,93 +426,162 @@ width: 82% ;                /* * damit Umbruch nach Wort "store" entsteht */
 
 
 
-/* ********************** html setzen ***************** */
+    /* ********************** html setzen ***************** */
 
     html {
         max-width: 600px;
     }
 
-/* **************************** body *********************** */
-/* **************************** body *********************** */
-/* **************************** body *********************** */
+    /* **************************** body *********************** */
+    /* **************************** body *********************** */
+    /* **************************** body *********************** */
 
-body {
-    padding: 2vh 1vw 1vh 1vw
-}
-
-
-/* **************************** header *********************** */
-/* **************************** header *********************** */
-/* **************************** header *********************** */
+    body {
+        padding: 2vh 1vw 1vh 1vw
+    }
 
 
-header>h1{
-    font-size: 2rem;
-    width: 49%;         /*  * mit BurgerMenü daneben */
-}
-
-header>nav{
-    width: 49%;      /* * Nav durch BurgerMenü ersetzen */
-}
+    /* **************************** header *********************** */
+    /* **************************** header *********************** */
+    /* **************************** header *********************** */
 
 
+    header>h1 {
+        font-size: 2rem;
+        width: 49%;
+        /*  * mit BurgerMenü daneben */
+    }
 
-
-/* **************************** main *********************** */
-/* **************************** main *********************** */
-/* **************************** main *********************** */
-
-
-
-/* *************************   erster   Block  -     sieben Bilder zusammen ********************* */
-/* *************************   erster   Block  -     sieben Bilder zusammen ********************* */
-/* *************************   erster   Block  -     sieben Bilder zusammen ********************* */
-
-
-.siebenBilderZusammen {
-flex-direction: column;         /* * damit Bilder untereinander */
-}
+    header>nav {
+        width: 49%;
+        /* * Nav durch BurgerMenü ersetzen */
+    }
 
 
 
 
-.einzelnesBild>a>img {
-    object-fit: cover;      /* !!! Hilfe !!! Bild wird nicht gezoomt, warum nicht? */
-    max-width: 100%;
-    
+    /* **************************** main *********************** */
+    /* **************************** main *********************** */
+    /* **************************** main *********************** */
+
+
+
+    /* *************************   erster   Block  -     sieben Bilder zusammen ********************* */
+    /* *************************   erster   Block  -     sieben Bilder zusammen ********************* */
+    /* *************************   erster   Block  -     sieben Bilder zusammen ********************* */
+
+
+    .siebenBilderZusammen {
+        flex-direction: column;
+        /* * damit Bilder untereinander */
+    }
+
+
+
+
+    .einzelnesBild>a>img {
+        object-fit: cover;
+        /* !!! Hilfe !!! Bild wird nicht gezoomt, warum nicht? */
+        max-width: 100%;
+
     }
 
 
 
 
 
-.einzelnesBild {
-width: 100% ;               /* * Bilder Begrenzung raus,
+    .einzelnesBild {
+        width: 100%;
+        /* * Bilder Begrenzung raus,
                             * damit sie ganze Breite einnehmen dürfen */
+    }
+
+
+
+
+
+    /* ************************ figcaption Bild Unterschriften **************** */
+
+    .sectionBildUnterschriften {
+        align-items: flex-start;
+        /* * Schriftgröße Preis wächst nach oben */
+    }
+
+
+    .sectionBildUnterschriften>figcaption>h3 {
+        font-size: 2.0rem;
+    }
+
+    .sectionBildUnterschriften>figcaption>h5 {
+        font-size: 1.8rem;
+    }
+
+
+    .sectionBildUnterschriften>figcaption>h4 {
+        font-size: 2.3rem;
+        width: 24vw;        /* * damit $ keinen Umbruch verursacht  
+                                * da Schrift h3 ja jetzt teils zwei zeilig 
+                                * Vorsicht gibt auch $799,00*/
+        text-align: right;  /* *damit es mit Bild Rand rechts bündig ist */
+                            }
+
+
+
+    /* **************************** footer *********************** */
+    /* **************************** footer *********************** */
+    /* **************************** footer *********************** */
+
+
+    /* *********** Grid Area     4 Spalten 3 Zeilen ************* */
+
+    footer>section {
+        width: 100%;
+
+
+        grid-template-columns: 1fr;
+        /* * eine Spalte über ganze Breite */
+
+        grid-template-rows: 2fr 4fr / 2fr 4fr 0fr / 2fr 4fr 0fr / 2fr 4fr 0fr / 1fr;
+        /* * dafür 12 Zeilen  - davor 3*4 = 12 jetzt 1*12 = 12 */
+        /* * Vorsicht weil foot1 ganz unten muss auch sein 1fr ganz hinten */
+
+        row-gap: 2vh;
+
+
+
+        grid-template-areas:
+            "head1"
+            "text1"
+            "head2"
+            "text2"
+            /* "foot2" */       /* * leer Block verschwindet somit passt Fromatierung */
+            "head3"
+            "text3"
+            /* "foot3" */        /* * leer Block verschwindet somit passt Fromatierung */
+            "head4"
+            "text4"
+            /* "foot4" */         /* * leer Block verschwindet somit passt Fromatierung */
+            "foot1"
+            /* * da copyr ganz unten sein soll */
+
+    }
+
+
+    /* **************** footer alle   p   Schriftgröße   */
+
+    foote>section>p {
+        font-size: 2.3rem;
+        word-spacing: 1rem;
+    }
+/* ************* Spalte 1 ************** */
+
+.designShop {
+font-size: 3rem;
 }
 
-
-
-
-
-/* ************************ figcaption Bild Unterschriften **************** */
-
-.sectionBildUnterschriften {
-align-items: baseline;
-}
-
-
-.sectionBildUnterschriften>figcaption>h3 {
-    font-size: 1.3rem;
-}
-
-.sectionBildUnterschriften>figcaption>h5{
-font-size: 1.3rem;
-}
-
-
-.sectionBildUnterschriften>figcaption>h4 {
-font-size: 1.9rem;
+.designShop__textMitte {
+width: 55%;
+    font-size: ;
 
 }
 
