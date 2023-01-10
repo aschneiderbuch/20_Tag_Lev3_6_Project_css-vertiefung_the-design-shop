@@ -1,0 +1,66 @@
+/* ************ Schriften zum einfügen */
+/* 
+
+font-family: SchriftNormal , sans-serif;
+
+font-family: SchriftSchraeg , sans-serif;
+
+*/
+
+
+
+
+
+
+
+
+
+/* ********************* font Familiy Schriften einbinden *********** */
+
+@font-face {
+    font-family: SchriftSchraeg ;
+    src: url("../fonts/Karla/Karla-Italic-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: SchriftNormal ;
+    src: url("../fonts/Karla/Karla-VariableFont_wght.ttf");
+}
+
+
+
+
+
+
+
+/* ********************** Browser default style auf 0 setzen **************** */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+/* ********************** html setzen ***************** */
+
+html {
+    font-size: 16px;
+    max-width: 1440px;
+    scroll-behavior: smooth;
+}
+
+
+
+
+/* ******************* img verkleinern, damit es anfangs nicht alles zerschiest ******* */
+
+img {
+
+
+}
+
