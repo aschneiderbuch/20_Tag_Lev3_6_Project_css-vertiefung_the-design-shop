@@ -134,12 +134,13 @@ header>nav>a {
 
 /* ************* Text hover Effekt  ************* */
 
-header>h1:hover, header>nav>a:hover{
-    filter:saturate(2%) grayscale(95%) contrast(20%) brightness(1.4) ;
-            /* * graut Text ein :-(  */
-            border-radius: 20vw;
-    
-    }
+header>h1:hover,
+header>nav>a:hover {
+    filter: saturate(2%) grayscale(95%) contrast(20%) brightness(1.4);
+    /* * graut Text ein :-(  */
+    border-radius: 20vw;
+
+}
 
 
 
@@ -189,7 +190,7 @@ header>h1:hover, header>nav>a:hover{
     /* * macht das große wieder groß
                                             * wichtig muss nach .einzelBild
                                             * kommen, da es zuerst auch 30% ist  */
-    
+
 }
 
 
@@ -197,11 +198,11 @@ header>h1:hover, header>nav>a:hover{
 
 /* ************* Bild hover Effekt  ************* */
 
-.einzelnesBild>a>img:hover{
-filter:saturate(2%) grayscale(95%) contrast(20%) brightness(1.4) ;
-        /* * graut Bilder ein :-(  */
+.einzelnesBild>a>img:hover {
+    filter: saturate(2%) grayscale(95%) contrast(20%) brightness(1.4);
+    /* * graut Bilder ein :-(  */
 
-        border-radius: 50vw;
+    border-radius: 50vw;
 
 }
 
@@ -234,12 +235,12 @@ filter:saturate(2%) grayscale(95%) contrast(20%) brightness(1.4) ;
     /* * macht Abstand nach obenzur großen Unterschrift */
 }
 
-.sectionBildUnterschriften>figcaption>h4{
+.sectionBildUnterschriften>figcaption>h4 {
     background-color: antiquewhite;
     font-size: 1.15rem;
 }
 
-.sectionBildUnterschriften>figcaption>h4::before{
+.sectionBildUnterschriften>figcaption>h4::before {
     content: " $ ";
 }
 
@@ -251,15 +252,99 @@ filter:saturate(2%) grayscale(95%) contrast(20%) brightness(1.4) ;
 /* **************************** footer *********************** */
 /* **************************** footer *********************** */
 
-footer>section{
+
+/* *********** Grid Area     4 Spalten 3 Zeilen ************* */
+footer>section {
     background-color: red;
-    width: 85%;         /* * damit Footer nur bis ca. mitte 3tes Bild geht */
-    display: flex;      /* * damit 4 Texte/article nebeneinander */
-    justify-content:space-between;
-    padding-top: 5vh;       /* * damit Abstand zu Bildunterschriften kommt */
+    width: 90%;
+    /* * damit Footer nur bis ca. mitte 3tes Bild geht */
+    padding-top: 5vh;
+    /* * damit Abstand zu Bildunterschriften kommt */
+    display: grid;
+
+
+    grid-template-columns: 3fr 1fr 2fr 2fr;
+    grid-template-rows: 1fr 4fr 1fr;
+
+    grid-template-areas:
+        "head1 head2 head3 head4"
+        "text1 text2 text3 text4"
+        "foot1 foot2 foot3 foot4"
+
+    ;
+    row-gap: 2vh;
+    column-gap: 2vw;
 }
 
-.footerBlockSpalte__designShop{
-    background-color: aqua;
 
+
+
+
+
+/* ************* Spalte 1 ************** */
+
+.designShop {
+    background-color: yellow;
+    grid-area: head1;
+}
+
+.designShop__textMitte {
+    background-color: greenyellow;
+    grid-area: text1;
+}
+
+.designShop__textUnten {
+    background-color: green;
+    grid-area: foot1;
+}
+
+
+
+
+
+
+/* ************* Spalte 2 ************** */
+
+.contact {
+    background-color: yellow;
+    grid-area: head2;
+}
+
+.contact__textMitte {
+    background-color: greenyellow;
+    grid-area: text2;
+}
+
+
+
+
+
+
+/* ************* Spalte 3 ************** */
+
+.newsLetter {
+    background-color: yellow;
+    grid-area: head3;
+}
+
+.newsLetter__textMitte {
+    background-color: greenyellow;
+    grid-area: text3;
+}
+
+
+
+
+
+
+/* ************* Spalte 4 ************** */
+
+.findUs {
+    background-color: yellow;
+    grid-area: head4;
+}
+
+.findUs__textMitteNav {
+    background-color: greenyellow;
+    grid-area: text4;
 }
