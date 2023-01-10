@@ -64,7 +64,38 @@ width: 300px;
 
 }
 
+
+/* **************************** header *********************** */
+/* **************************** header *********************** */
+/* **************************** header *********************** */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ****************** Bilder damit es grobe Style vorschau gibt */
+
+
 .siebenBilderZusammen{
+    max-width: 100%;
     background-color: red;
     display: flex;
     flex-wrap: wrap;
@@ -77,5 +108,5 @@ width: 300px;
 
 .einzelnesBild--breit{
     background-color: blue;
-    width: 100vw;   /* * img noch direkt ansprechen */
+    width: 100%;   /* * img noch direkt ansprechen */
 }
