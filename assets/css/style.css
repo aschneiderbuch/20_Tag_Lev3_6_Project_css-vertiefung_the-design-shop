@@ -44,7 +44,7 @@ h5,
 p,
 a {
     font-family: SchriftNormal, sans-serif;
-    color: #323a45;
+    color: #323a45;             /* * damit werden auch a von blau auf dunkel */
 
 }
 
